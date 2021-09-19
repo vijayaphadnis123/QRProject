@@ -42,13 +42,13 @@ stages:
        displayName: Terraform plan
        inputs:
           command: 'plan'
-          workingDirectory: './Project Starter Resources/terraform'
+          workingDirectory: './terraform'
       
      - task:  charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
        displayName: Terraform Apply
        inputs:
           command: 'apply'
-          workingDirectory: './Project Starter Resources/terraform'
+          workingDirectory: './terraform'
           backendType: azurerm
           allowTelemetryCollection: true
 
