@@ -29,7 +29,7 @@ stages:
        inputs:
           provider: 'azurerm'
           command: 'init'
-          workingDirectory: './terraform'
+          #workingDirectory: './terraform'
           backendServiceArm: 'QRServiceConnection'
           backendAzureRmResourceGroupName: 'MyResGroup'
           backendAzureRmStorageAccountName: 'udaqualityrelease'
@@ -42,13 +42,13 @@ stages:
        displayName: Terraform plan
        inputs:
           command: 'plan'
-          workingDirectory: './terraform'
+          #workingDirectory: './terraform'
       
      - task:  charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
        displayName: Terraform Apply
        inputs:
           command: 'apply'
-          workingDirectory: './terraform'
+          #workingDirectory: './terraform'
           backendType: azurerm
           allowTelemetryCollection: true
 
