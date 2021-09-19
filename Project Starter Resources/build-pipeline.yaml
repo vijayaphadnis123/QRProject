@@ -2,13 +2,16 @@ name: Azure Pipelines
 variables:
   python.version: '3.7.6'
   webAppName: 'QualityRelease-AppService'
-  azureServiceConnectionId: 'QRServiceConnection'
+  azureServiceConnectionId: '76b1e36a-6202-4055-914a-1618f6c3575e'
+Owner
+  Active
+
 stages:
 - stage: Build
   jobs:
   - job: Build
     pool:
-      name: Hosted Ubuntu 1604
+      name: Hosted Ubuntu 16.04
     steps:
     # Needed for Terraform VM deployment
      - task: InstallSSHKey@0
