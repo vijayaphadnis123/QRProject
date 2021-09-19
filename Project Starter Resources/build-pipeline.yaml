@@ -24,7 +24,7 @@ stages:
        inputs: 
           terraformVersion: '0.13.2'
      
-     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformCLI@0
+     - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
        displayName: Terraform Initialize
        inputs:
           provider: 'azurerm'
@@ -38,13 +38,13 @@ stages:
           allowTelemetryCollection: true
           
      
-     - task:  ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformCLI@0
+     - task:  ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
        displayName: Terraform plan
        inputs:
           command: 'plan'
           workingDirectory: './Project Starter Resources/terraform'
       
-     - task:  ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformCLI@0
+     - task:  ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
        displayName: Terraform Apply
        inputs:
           command: 'apply'
