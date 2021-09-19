@@ -15,7 +15,7 @@ stages:
       
 - stage: Provision
   displayName: 'Terraforming on Azure...'
-  dependsOn: Build
+  
   jobs:
   - job: Provision
     displayName: 'Provisioning Container Instance'
