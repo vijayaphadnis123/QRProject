@@ -42,13 +42,13 @@ stages:
        displayName: Terraform plan
        inputs:
           command: 'plan'
-          workingDirectory: './terraform'
+          workingDirectory: './Project Starter Resources/terraform'
       
      - task:  TerraformCLI@0
        displayName: Terraform Apply
        inputs:
           command: 'apply'
-          workingDirectory: './terraform'
+          workingDirectory: './Project Starter Resources/terraform'
           backendType: azurerm
           allowTelemetryCollection: true
 
