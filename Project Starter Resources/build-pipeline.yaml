@@ -29,7 +29,7 @@ stages:
           provider: 'azurerm'
           command: 'init'
           workingDirectory: './terraform'
-          backendServiceArm: 'Azure Subscription 1(76b1e36a-6202-4055-914a-1618f6c3575e)'
+          backendServiceArm: 'QRServiceConnection'
           backendAzureRmResourceGroupName: 'MyResGroup'
           backendAzureRmStorageAccountName: 'udaqualityrelease'
           backendAzureRmContainerName: 'tfstate'
