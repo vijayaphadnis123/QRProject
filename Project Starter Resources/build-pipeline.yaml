@@ -19,7 +19,7 @@ stages:
     #     '
     #     sshKeySecureFile: '../id_rsa.pub'
  
-     - task: TerraformInstaller@0
+     - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0
        displayName: 'Use Terraform latest'
        inputs: 
           terraformVersion: '0.13.2'
